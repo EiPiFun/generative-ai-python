@@ -1,0 +1,35 @@
+Source: python-google-generativeai
+Section: python
+Priority: optional
+Maintainer: Home Assistant Team <team+homeassistant@tracker.debian.org>
+Uploaders:
+ DONG XU <me@eipi.fun>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ openstack-pkg-tools,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-setuptools,
+ python3-absl,
+ python3-nose,
+Build-Depends-Indep:
+ python3-pytest,
+ python3-absl,
+ python3-nose,
+Standards-Version: 4.7.0
+Vcs-Browser: https://salsa.debian.org/homeassistant-team/deps/python-google-generativeai
+Vcs-Git: https://salsa.debian.org/homeassistant-team/deps/python-google-generativeai.git
+Homepage: https://github.com/google-gemini/generative-ai-python
+
+Package: python3-google-generativeai
+Architecture: all
+Depends:
+ python3-requests,
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Google AI Python SDK for the Gemini API
+ The Google AI Python SDK is the easiest way for Python developers to build with
+ the Gemini API. The Gemini API gives you access to Gemini models created by 
+ Google DeepMind. Gemini models are built from the ground up to be multimodal, 
+ so you can reason seamlessly across text, images, and code.

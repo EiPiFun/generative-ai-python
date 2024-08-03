@@ -1,0 +1,5 @@
+python-google-generativeai (0.7.2-1) unstable; urgency=medium
+
+  * Initial packaging. (Closes: #)
+
+ -- DONG XU <me@eipi.fun>  Sat, 03 Aug 2024 00:09:19 +0900
